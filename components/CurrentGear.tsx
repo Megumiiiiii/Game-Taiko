@@ -32,7 +32,7 @@ export default function CurrentGear({
 
       const p = (await miningContract.call(
         "playerPickaxe",
-        address
+        [address]
       )) as ContractMappingResponse;
 
       // Now we have the tokenId of the equipped pickaxe, if there is one, fetch the metadata for it
