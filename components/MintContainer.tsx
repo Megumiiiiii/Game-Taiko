@@ -23,7 +23,6 @@ export default function MintContainer() {
 
       <div className={styles.smallMargin}>
         <Web3Button
-          colorMode="dark"
           contractAddress={CHARACTER_EDITION_ADDRESS}
           action={(contract) => contract.erc1155.claim(0, 1)}
         >

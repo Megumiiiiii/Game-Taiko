@@ -33,7 +33,7 @@ export default function Rewards({ miningContract, tokenContract }: Props) {
   const { data: unclaimedAmount } = useContractRead(
     miningContract,
     "calculateRewards",
-    address
+    [address]
   );
 
   return (
