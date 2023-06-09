@@ -19,6 +19,7 @@ import {
 import styles from "../styles/Home.module.css";
 
 export default function Play() {
+  const connectWithMetamask = useMetamask();
   const address = useAddress();
 
   const { contract: miningContract } = useContract(MINING_CONTRACT_ADDRESS);
