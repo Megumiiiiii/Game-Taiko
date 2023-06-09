@@ -44,13 +44,7 @@ export default function Rewards({ miningContract, tokenContract }: Props) {
         Your <b>Gold Gems</b>
       </p>
 
-      {tokenMetadata && (
-        <ThirdwebNftMedia
-          // @ts-ignore
-          metadata={tokenMetadata}
-          height={"48"}
-        />
-      )}
+
       <p className={styles.noGapBottom}>
         Balance: <b>{currentBalance?.displayValue}</b>
       </p>
